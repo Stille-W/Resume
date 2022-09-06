@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+/*   font-family: 'Oswald', sans-serif; */
+}
+
+html, body {
+  width: 100%;
+}
+
+.btns {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.langBtns {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.langBtn {
+  font-size: 20px;
+  color: white;
+  font-family: 'Libre Baskerville', sans-serif;
+  border: 3px solid transparent;
+  border-radius: 8px;
+  background: #999999;
+  margin-bottom: 16px;
+  padding: 8px 32px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.langBtn:hover {
+  background: transparent;
+  border: 3px solid #999999;
+  color: #999999;
+}
+
+.langSelects {
+  display: none;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 32px;
+}
+
+.langSelects.active {
+  display: flex;
+}
+
+.langSelect {
+  font-size: 14px;
+  color: #999999;
+  font-family: 'Catamaran', sans-serif;
+  border: 1px solid transparent;
+  background: transparent;
+  margin-right: 8px;
+  padding: 0px 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.langSelect:hover {
+  background: #999999;
+  border-radius: 8px;
+  color: white;
+}
+
+.load {
+  position: absolute;
+  z-index: 1001;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.load img {
+  width: 600px;
+  position: relative;
+}
+
+section {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 72px 16%;
+}
+
+p {
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: #999999;
+  font-family: 'Catamaran', sans-serif;
+}
+
+li {
+  font-size: 20px;
+  color: #999999;
+  margin-left: 8px;
+  margin-bottom: 4px;
+  font-family: 'Catamaran', sans-serif;
+}
+
+a {
+  text-decoration:none;
+}
+
+hr {
+  border: 0;
+  padding-top: 2px;
+  background: linear-gradient(to right, transparent, #a6a6a6, transparent);
+  margin-top: 2px;
+}
+
+.skill {
+  margin-top: 96px;
+}
+
+.content {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.profile {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 36px;
+  font-weight: 700;
+  color: #444444;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #666666;
+  padding-left: 12px;
+  margin-left: 16px;
+}
+
+.title:before {
+  content: '';
+  height: 100%;
+  width: 4px;
+  background: #666666;
+  position:absolute;
+  left: 0;
+  top: 0;
+}
+
+.education {
+  font-weight: 600;
+  color: #666666;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.uniImg {
+  height: 24px;
+}
+
+.depart {
+  margin-left: 40px;
+  margin-top: -12px;
+}
+
+.contact {
+  margin-top: 28px;
+  margin-left: 40px;
+}
+
+.contact img {
+  width: 32px;
+  margin-right: 16px;
+}
+
+.firstTitle {
+  font-size: 28px;
+  font-weight: 600;
+  color: #444444;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.secondTitle {
+  font-size: 24px;
+  color: #666666;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.secondHr {
+  padding-top: 1px;
+  margin: 32px 0px -32px 0px;
+}
+
+.block {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 96px 16px 36px 16px;
+}
+
+.card {
+  margin-right: 16%;
+}
+
+.expContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.area {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 96px;
+  margin-bottom: 36px;
+}
+
+.left {
+  width: 100%;
+}
+
+.right {
+  width: 100%;
+}
+
+.emphTitle {
+  font-weight: 600;
+}
+
+.sub {
+  color: #666666;
+  margin-left: 12px;
+  padding-left: 10px;
+}
+
+.sub:before {
+  content: '';
+  height: 100%;
+  width: 2px;
+  background: #666666;
+  position:absolute;
+  left: 0;
+  top: 0;
+}
+
+.context {
+  margin-left: 12px;
+  font-size: 16px;
+}
+
+.link {
+  display: inline-block;
+}
+
+.link:hover {
+  color: #cccccc;
+}
+
+.link:after {
+  content:'';
+  display: block;
+  height: 2px;
+  width:100%;
+  background: #666666;
+  margin-top: 1px;
+  transition: all 0.3s;
+}
+
+.link:hover:after {
+  width:0%;
+}
